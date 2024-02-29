@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- mi css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <h1 class="page_title">Control de usuarios</h1>
+    <section class="users_panel">
+      <!-- formulario de usuarios -->
+      <form class="users_form" id="usersForm">
+        <!-- fila de inputs -->
+        <div class="inputs_row">
+          <!-- grupo de input y label -->
+          <div class="input_group">
+            <label>Nombre</label>
+            <input name="name" type="text" placeholder="Nombre" required />
+          </div>
+          <div class="input_group">
+            <label>Apellido</label>
+            <input name="lastName" type="text" placeholder="Apellido" required />
+          </div>
+        </div>
+
+        <div class="inputs_row">
+          <div class="input_group input_group_direction">
+            <label>Direccion</label>
+            <input name="adress" type="text" placeholder="Direccion" required />
+          </div>
+          <div class="input_group">
+            <label>Edad</label>
+            <input name="age" type="number" placeholder="Edad" required />
+          </div>
+        </div>
+
+        <div class="input_group">
+          <label>Email</label>
+          <input name="email" type="email" placeholder="Email" required />
+        </div>
+
+        <button class="users_form_button">Cargar Usuario</button>
+      </form>
+      <!-- Tabla de usuarios -->
+      <table class="users_table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Direccion</th>
+            <th>Edad</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="usersContainer">
+          <tr class="user_row_white">
+            <th>1</th>
+            <th>Juan</th>
+            <th>Chavez</th>
+            <th>Avenida siempre viva</th>
+            <th>30</th>
+            <th>juanchavez@gmail.com</th>
+          </tr>
+          <tr class="user_row_dark">
+            <th>2</th>
+            <th>Juan</th>
+            <th>Chavez</th>
+            <th>Avenida siempre viva</th>
+            <th>30</th>
+            <th>juanchavez@gmail.com</th>
+          </tr>
+          <tr class="user_row_white">
+            <th>3</th>
+            <th>Juan</th>
+            <th>Chavez</th>
+            <th>Avenida siempre viva</th>
+            <th>30</th>
+            <th>juanchavez@gmail.com</th>
+          </tr>
+          <tr class="user_row_dark">
+            <th>4</th>
+            <th>Juan</th>
+            <th>Chavez</th>
+            <th>Avenida siempre viva</th>
+            <th>30</th>
+            <th>juanchavez@gmail.com</th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- mi script -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

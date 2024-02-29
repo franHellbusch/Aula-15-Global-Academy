@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.products-container {
+  display: flex;
+}
+
+.product {
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #a7a7a7;
+  background: #ffb6b6;
+  margin: 20px;
+}
+
+.formulario {
+  margin: 100px;
+}
+
+.input_row {
+  display: flex;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_table {
+  margin: 0 100px;
+  border: 1px solid black;
+}
+
+.user_table_headers > tr > th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.user_table_content > tr > th {
+  border: 1px solid black;
+  padding: 5px;
+}

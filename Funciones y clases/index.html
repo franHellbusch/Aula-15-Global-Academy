@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Hola mundo</h1>
+
+    <div id="container">
+      <h1 id="container-titulo">titulo</h1>
+    </div>
+
+    <div class="teclado"></div>
+
+    <button id="buttonClick">Alternar</button>
+    <button id="buttonMouseOver">Pasar por encima</button>
+
+    <button onclick="handleClick()">Clickeame</button>
+
+    <input id="inputChange" type="text" />
+    <p id="inputValue"></p>
+
+    <!-- FORMULARIO -->
+    <form id="formulario" class="formulario">
+      <div class="input_row">
+        <div class="input_group">
+          <label>Nombre</label>
+          <input name="name" id="formularioName" type="text" required />
+        </div>
+        <div class="input_group">
+          <label>Apellido</label>
+          <input name="lastName" id="formularioLastName" type="text" required />
+        </div>
+      </div>
+      <div class="input_group">
+        <label>Email</label>
+        <input name="email" id="formularioEmail" type="email" required />
+      </div>
+      <button>Enviar</button>
+    </form>
+
+    <table class="user_table">
+      <thead class="user_table_headers">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody class="user_table_content" id="usersContainer"></tbody>
+    </table>
+
+    <div class="products-container" id="productsContainer"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
