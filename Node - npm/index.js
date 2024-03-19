@@ -2,6 +2,7 @@
 // const { sumar, restar } = require("./functions/operaciones");
 
 // import from (forma de traernos informacion de otros archivos js mas actual)
+import { getProducts } from "./functions/apiCalls.js";
 import operacionPorDefecto, { sumar, restar } from "./functions/operaciones.js";
 
 console.log(sumar(10, 6));
@@ -19,3 +20,6 @@ const user = {
 // const apellido = user.apellido;
 
 const { name, apellido, edad } = user;
+
+// llamada a la api
+getProducts();
